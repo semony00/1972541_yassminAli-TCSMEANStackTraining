@@ -1,0 +1,63 @@
+#mainDiv{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 28px;
+    padding: 30px;
+    border: solid 2px;
+    height: 200px;
+    width: 300px;
+    float: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+#managerDiv{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 23px;
+    padding: 30px;
+    border: solid 2px;
+    height: 300px;
+    width: 500px;
+    float: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+  
+th, td {
+    padding: 10px;
+}
+
+#tableDiv{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 23px;
+    padding: 30px;
+    height: 300px;
+    width: 500px;
+    float: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}

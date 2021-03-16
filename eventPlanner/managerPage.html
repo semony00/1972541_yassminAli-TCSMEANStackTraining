@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <div id= "managerDiv">
+        <p>Add New Budget</p>
+
+        <label>Client Name </label>
+        <input type="text" id="name"><br/><br/>
+
+        <label >Project Name </label>
+        <input type="text" id="proj"><br/><br/>
+
+        <label>Budget </label>
+        <input type="text" id="budget"><br/><br/>
+
+        <input type="button" value="Add" id="add" onclick="storeInSession()">
+        <input type="button" value="Clear" id="clear" onclick="resetData()">    
+    </div>
+    <div style="font-size: 24px;">
+        <a href="main.html">Back</a>
+    </div>
+    
+</body>
+</html>
