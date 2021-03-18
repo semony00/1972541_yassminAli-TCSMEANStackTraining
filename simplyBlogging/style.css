@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(245, 219, 213);
+}
+
+#mainDiv{
+    background-color: rgb(154, 150, 150);
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    padding: 30px;
+    border: solid 2px;
+}
