@@ -52,11 +52,4 @@ export class LoginComponent implements OnInit {
       
     }
   }
-
-  /*
-  reset(){
-    this.userName="";
-    this.passInput= "";
-  }*/
-
 }

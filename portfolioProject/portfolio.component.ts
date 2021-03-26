@@ -19,8 +19,6 @@ export class PortfolioComponent implements OnInit {
     let name:string= contactRef.name;
     let phoneNum:string= contactRef.phone;
 
-    //this.username= sessionStorage.getItem("user");
-
     //adding values to table
     let table: HTMLTableElement = <HTMLTableElement> document.getElementById("contactTable");
     let tableBody:any= table.getElementsByTagName("tbody")[0];
@@ -32,6 +30,5 @@ export class PortfolioComponent implements OnInit {
 
     (<HTMLInputElement>document.getElementById("contName")).value="";
     (<HTMLInputElement>document.getElementById("phone")).value="";
-    
   }
 }
