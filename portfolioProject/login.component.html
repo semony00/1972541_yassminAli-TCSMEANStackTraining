@@ -1,0 +1,31 @@
+<div>
+
+    <form #userRef="ngForm" (ngSubmit)= "checkUser(userRef.value)" id="loginForm">
+        <br/>
+        <h2><u>Login Form</u></h2>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <label class="col-3">Username</label>
+                <input class=" col-2" type="text" name="user" ngModel><br/><br/>
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-3">Password</label>
+                <input class=" col-2" type="password" name="pass" ngModel><br/><br/>
+            </div>
+        
+            <br/>
+            <div class="row">
+                <p class="col-3"></p>
+                <button type="submit" class="btn btn-primary col-2">Login</button>
+                <br/><br/>
+                <a routerLink="/signup" class="signUp col-5" > Sign Up</a>
+            </div>
+            <br/>
+        </div>
+        <br/>
+    </form>
+    <router-outlet></router-outlet>
+
+</div>

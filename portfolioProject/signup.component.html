@@ -1,0 +1,46 @@
+<div>
+    
+
+    <form [formGroup]= "UserCredintials" (ngSubmit)="saveInSession()">
+        <br/>
+
+
+        <div class="container">
+            <div class="row">
+                <h2 class="col-9"><u><b> Sign Up Form</b></u></h2>
+                <a routerLink="/login" class="col-3">Login</a>
+            </div> 
+            <br/>
+
+            <div class="row">
+                <label class="col-3">First Name</label>
+                <input class="col-4" type="text" formControlName="firstName" id="fname">
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-3">Last Name</label>
+                <input class="col-4" type="text" formControlName="lastName" id="lname">
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-3">Username</label>
+                <input class="col-4" type="text" formControlName="user" id="us">
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-3">Password</label>
+                <input class="col-4" type="text" formControlName="password" id="pass">
+            </div>
+            <br/>
+
+            <div class="row">
+                <p class="col-3"></p>
+                <button type="submit" class="btn btn-dark col-2">Register</button>
+                &nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-dark col-2" (click)= "resetSession()">Reset</button>
+            </div>
+            <br/>
+        </div>
+    </form>
+
+</div>

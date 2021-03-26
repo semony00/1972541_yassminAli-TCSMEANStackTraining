@@ -1,0 +1,28 @@
+.main{
+    background-color: blanchedalmond;
+}
+
+.col-3, .col-2{
+    font-size: 24px;
+}
+
+
+table, th, td, tbody {
+    border: 1px solid black;
+    background-color: rgb(189, 189, 232);
+  }
+  
+th, td {
+    padding: 10px;  
+    width: 240px;
+}
+
+#tableDiv{
+    font-size: 23px;
+    height: 300px;
+    width: 1000px;
+    float: center;
+    text-align: center;
+    justify-content: center;
+}
+  

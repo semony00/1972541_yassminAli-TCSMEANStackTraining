@@ -1,0 +1,60 @@
+<div class="main">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-5"><p> </p></div>
+            <div class="col-4"><h2><u> My Portfolio</u></h2></div>
+        </div>
+
+        <br/><br/>
+
+        <div class="row"> 
+            <div class="col-2"><b>Welcome</b></div>
+            <div class="col-2">{{username}}</div>
+        </div>
+        
+        <br/>
+
+        <form #contactRef="ngForm" (ngSubmit)= "saveRecord(contactRef.value)">
+            <div class="row"> 
+                <div class="col-3">
+                    <label>Contact Name</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="name" id="contName" ngModel/>
+                </div>
+            </div>
+            <br/>
+            <div class="row"> 
+                <div class="col-3">
+                    <label>Phone no.</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="phone" id="phone" ngModel/>
+                </div>
+    
+                <div class="col-6">
+                    <button type="submit" class="btn btn-dark col-2">Save</button>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <h3>Contact Details: </h3>
+            <div id="tableDiv" >
+                <table id="contactTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone No.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+            </div>
+
+        </form>
+        
+    </div>
+</div>
