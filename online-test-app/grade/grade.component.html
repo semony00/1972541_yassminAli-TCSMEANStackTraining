@@ -1,0 +1,19 @@
+<div>
+    <h3>Final Score: {{finalGrade}}</h3> 
+
+    <br/>
+
+    <div *ngFor="let ans of jsonRes; index as i">
+        <h4>Question {{i+1}} </h4>
+        <br/>
+        <label> <b> Your answer is:</b> {{ans[0]}} ) {{ans[2]}}</label>
+        <br/><br/>
+        <label> <b> Correct answer is:</b> {{ans[1]}} ) {{ans[3]}}</label>
+        <br/><br/>
+
+
+        <hr/>
+
+    </div>
+
+</div>

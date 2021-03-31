@@ -1,0 +1,29 @@
+<div id="mainDiv">
+    <h2>Welcome to Exam 1</h2>
+    <h3 id="prompt">Press Next to Proceed</h3>
+
+    
+    <div id="inputDiv"  style="visibility: hidden;" class="container">
+            <label id="quest"></label><br/><br/>
+
+            <input type="radio" value="a" [(ngModel)]= "ans" id="a" #aRef (click)= "saveAnswer(aRef.value, aAns.textContent)"> 
+            &nbsp;
+            <label id="aLabel" #aAns></label><br/>
+
+            <input type="radio" value="b"  [(ngModel)]= "ans" id="b" #bRef (click)= "saveAnswer(bRef.value, bAns.textContent)">
+            &nbsp;
+            <label id="bLabel" #bAns></label><br/>
+
+            <input type="radio" value="c"  [(ngModel)]= "ans" id="c" #cRef (click)= "saveAnswer(cRef.value, cAns.textContent)">
+            &nbsp;
+            <label id="cLabel" #cAns></label><br/>
+
+            <input type="radio" value="d"  [(ngModel)]= "ans" id="d" #dRef (click)= "saveAnswer(dRef.value, dAns.textContent)">
+            &nbsp;
+            <label id="dLabel" #dAns></label><br/><br/> <br/>     
+       </div>
+
+    
+    <button type="button" class="btn btn-primary col-2" (click)= "loadQuestions()" id= "next">Next</button><br/><br/>
+
+</div>
