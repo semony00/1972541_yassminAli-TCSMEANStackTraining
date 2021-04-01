@@ -19,15 +19,14 @@ export class GetTaskComponent implements OnInit {
 
   storeTask(userInput:any){
     this.taskServ.storeTask(userInput);
-    //console.log(this.taskList.length)
     //this.retrieveTasks()
-    //this.taskServ.getTask().subscribe(result=>this.taskList=result);
   }
-
+  /*
   retrieveTasks(){
     console.log(this.taskList.length)
-    //this.taskServ.getTask().subscribe(result=>this.taskList=result);
+    this.taskServ.getTask().subscribe(result=>this.taskList=result);
     console.log(this.taskList.length)
   }
+  */
 
 }

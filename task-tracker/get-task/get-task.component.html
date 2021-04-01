@@ -1,0 +1,71 @@
+
+<div class="container">
+
+    <h1> Task Tracker</h1> 
+    <br/>
+
+    <div class="row">
+        <div class="col-5">
+            <h2> <u>To-do tasks</u> </h2>
+            <form #tskRef= "ngForm" (ngSubmit)= "storeTask(tskRef.value)" >   
+                <mat-form-field>
+                    <mat-label>ID: </mat-label>
+                    <br/>
+                    <input matInput="text" name="id" ngModel/>
+                </mat-form-field>
+                <br/>
+    
+                <mat-form-field>
+                    <mat-label>Name: </mat-label>
+                    <br/>
+                    <input matInput="text" name="name" ngModel/>
+                </mat-form-field>
+                <br/>
+    
+                <mat-form-field>
+                    <mat-label>Task: </mat-label>
+                    <br/>
+                    <textarea matInput name="task" ngModel></textarea>  
+                </mat-form-field>
+                <br/>
+    
+                    <label>Dead Line: </label>
+                    <br/>
+                    <input type= "date" name="deadline" value= "2021-04-01" min="2021-04-01" max="2021-12-31" ngModel/>
+                    <br/>
+                    <br/>
+                    <button mat-stroked-button class="primary" style="background-color: darkgoldenrod;">Store</button>
+            </form>
+
+        </div>
+
+
+        <div class="col-7">
+           <!-- <button  mat-stroked-button class="primary" style="background-color: green;" (click)= "retrieveTasks()">Update Table</button> -->
+           <h2> <u>To-do List</u> </h2>
+            <br/>
+            <br/>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Task</th>
+                    <th>Dead Line</th>
+                </tr>
+                <tr *ngFor="let T of taskList">
+                    <td>{{T.id}}</td>
+                    <td>{{T.name}}</td>
+                    <td>{{T.task}}</td>
+                    <td>{{T.deadline}}</td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+</div>
